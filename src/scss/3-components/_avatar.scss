@@ -1,0 +1,37 @@
+/** @format */
+.sidenav__profile {
+  display: flex;
+  align-items: center;
+}
+.sidenav__profile-avatar {
+  background-image: url('https://lh3.googleusercontent.com/pw/ACtC-3fFDJHZRlgaJ3D8crRp_I50f73Bd2UwUkQ-eaO-4d0D0O6UsnwVy1bj24qVN2eD1N_bQVy6hLWoiDo_TlHhrB3_tB2nuJ1-MhH14TRKFLdKqLoXTe_Xqubn64w2UYeWDdnQFdSpeDX8aOcHo3QKwJQPyQ=w1616-h1080-no?authuser=0');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  height: 54px;
+  width: 54px;
+  margin: 0 15px;
+  background-position: top center;
+}
+.sidenav__profile-title {
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+#avatar {
+  /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
+  background-image: url('https://lh3.googleusercontent.com/pw/ACtC-3fFDJHZRlgaJ3D8crRp_I50f73Bd2UwUkQ-eaO-4d0D0O6UsnwVy1bj24qVN2eD1N_bQVy6hLWoiDo_TlHhrB3_tB2nuJ1-MhH14TRKFLdKqLoXTe_Xqubn64w2UYeWDdnQFdSpeDX8aOcHo3QKwJQPyQ=w1616-h1080-no?authuser=0');
+
+  /* make a square container */
+  width: 40px;
+  height: 40px;
+
+  /* fill the container, preserving aspect ratio, and cropping to fit */
+  background-size: cover;
+
+  /* center the image vertically and horizontally */
+  background-position: top center;
+
+  /* round the edges to a circle with border radius 1/2 container size */
+  border-radius: 50%;
+}
