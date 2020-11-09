@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
+	<meta name="author" content="Bootlab">
+
+	<title>Initial Assement</title>
+
+	<link rel="preconnect" href="//fonts.gstatic.com/" crossorigin>
+
+	<!-- PICK ONE OF THE STYLES BELOW -->
+	<!-- <link href="css/corporate.css" rel="stylesheet"> -->
+	<!-- <link href="css/modern.css" rel="stylesheet"> -->
+	<link href="../dist/css/classic.css" rel="stylesheet">
+	<script>
+		fetch("sidebar.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".sidebar-content").innerHTML = data;
+			});
+		fetch("topnav.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".top-nav-content").innerHTML = data;
+			});
+		fetch("footer.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".footer-content").innerHTML = data;
+			});
+	</script>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar">
+			<div class="sidebar-content ">
+				<div>
+		</nav>
+
+
+		<div class="main">
+			<div class="top-nav-content">
+
+			</div>
+
+
+			<main class="content">
+				<div class="container-fluid p-0 d-flex flex-row overflow-auto ">
+					<div class="px-3">
+						<div class="card card-hover" style="width: 18rem;">
+							<img class="card-img-top" src="/src/img/photos/blo.svg" alt="Card image cap">
+							<ul class="list-group list-group-flush">
+								<a href="client-info.html">
+									<li class="list-group-item ">Client Info</li>
+								</a>
+								<a href="exersice-prescription.html">
+									<li class="list-group-item ">Exercise Prescription </li>
+								</a>
+								<a href="progression-key.html">
+									<li class="list-group-item ">Progression key</li>
+								</a>
+								<a href="workout-log.html">
+									<li class="list-group-item active">Workout Log </li>
+								</a>
+								<a href="workout-log.html">
+									<li class="list-group-item">Homework </li>
+								</a>
+
+								<a href="workout-log.html">
+									<li class="list-group-item">Archive </li>
+								</a>
+							</ul>
+						</div>
+					</div>
+
+
+
+					<div class="px-3">
+						<div class="card text-center " style=" min-width: 35em;">
+
+							<table class="table  table-bordered table-hover">
+								<thead>
+									<tr>
+										<th style="height:3rem;"><input type="date" name="" id=""
+												class="form-control form-control-no-border ml-auto"> </th>
+
+										<th>
+											<select class="form-control form-control-no-border ">
+												<option>Lindsey </option>
+												<option>Meredith</option>
+												<option>Denzel </option>
+												<option>Jackson </option>
+												<option>San-J </option>
+												<option>Nigel </option>
+											</select></th>
+										<th>
+											<div
+												class=" form-control-no-border custom-control custom-switch form-control  ">
+												<input type="checkbox"
+													class="custom-control-input form-control-no-border"
+													id="customSwitch1">
+												<label class="custom-control-label form-control-no-border"
+													for="customSwitch1">Completed</label>
+											</div>
+										</th>
+									</tr>
+									<tr class="bg-primary text-light">
+										<th style="height:3rem;">Exercise</th>
+										<th>Weight</th>
+										<th>Sets</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr style="background:#f6fef6;">
+										<td style="height:3.5rem; ">
+
+
+											<span>Barbell Squats </span>
+											<span class="badge badge badge-outline-success text-muted d-block">Super
+												Set 1</span>
+
+										</td>
+										<td>375 IBS</td>
+										<td>5 Reps x 5 Sets</td>
+									</tr>
+									<tr style="background:
+									#fffbfb;">
+										<td style="height:3.5rem;">
+
+											Bench Press
+											<span class="badge badge badge-outline-success text-muted d-block">Super
+												Set 2</span>
+										</td>
+										<td>225 IBS</td>
+										<td>10 reps x 10 sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Push ups
+										</td>
+										<td>BW</td>
+										<td>20 reps 5 sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Farmers Carries
+										</td>
+										<td>225 IBS</td>
+										<td>400 meters</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Barbell Squats
+
+										</td>
+										<td>375 IBS</td>
+										<td>5 Reps x 5 Sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Bench Press
+										</td>
+										<td>225 IBS</td>
+										<td>10 reps x 10 sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Push ups
+										</td>
+										<td>BW</td>
+										<td>20 reps 5 sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Farmers Carries
+										</td>
+										<td>225 IBS</td>
+										<td>400 meters</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Farmers Carries
+										</td>
+										<td>225 IBS</td>
+										<td>400 meters</td>
+									</tr>
+									<tr>
+										<td colspan="3" style="height:12.3em;">
+											<span>
+												<h1 class="display-4">1</h1>
+											</span>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit enim eos quo,
+											iure modi neque nihil deleniti illo, consequatur, officiis vel maxime quos
+											hic optio. Illum amet earum voluptates. Cupiditate!
+
+										</td>
+
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+
+					<div class="px-3">
+						<div class="card text-center " style=" min-width: 35em;">
+
+							<table class="table  table-bordered table-hover">
+								<thead>
+									<tr>
+										<th style="height:3rem;"><input type="date" name="" id=""
+												class="form-control form-control-no-border ml-auto"> </th>
+
+										<th>
+											<select class="form-control form-control-no-border ">
+												<option>Lindsey </option>
+												<option>Meredith</option>
+												<option>Denzel </option>
+												<option>Jackson </option>
+												<option>San-J </option>
+												<option>Nigel </option>
+											</select></th>
+										<th>
+											<div
+												class=" form-control-no-border custom-control custom-switch form-control  ">
+												<input type="checkbox"
+													class="custom-control-input form-control-no-border"
+													id="customSwitch1">
+												<label class="custom-control-label form-control-no-border"
+													for="customSwitch1">Completed</label>
+											</div>
+										</th>
+									</tr>
+									<tr class="bg-primary text-light">
+										<th style="height:3rem;">Exercise</th>
+										<th>Weight</th>
+										<th>Sets</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr style="background:#f6fef6;">
+										<td style="height:3.5rem; ">
+
+
+											<span>Barbell Squats </span>
+											<span class="badge badge badge-outline-success text-muted d-block">Super
+												Set 1</span>
+
+										</td>
+										<td>375 IBS</td>
+										<td>5 Reps x 5 Sets</td>
+									</tr>
+									<tr style="background:
+									#fffbfb;">
+										<td style="height:3.5rem;">
+
+											Bench Press
+											<span class="badge badge badge-outline-success text-muted d-block">Super
+												Set 2</span>
+										</td>
+										<td>225 IBS</td>
+										<td>10 reps x 10 sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Push ups
+										</td>
+										<td>BW</td>
+										<td>20 reps 5 sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Farmers Carries
+										</td>
+										<td>225 IBS</td>
+										<td>400 meters</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Barbell Squats
+
+										</td>
+										<td>375 IBS</td>
+										<td>5 Reps x 5 Sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Bench Press
+										</td>
+										<td>225 IBS</td>
+										<td>10 reps x 10 sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Push ups
+										</td>
+										<td>BW</td>
+										<td>20 reps 5 sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Farmers Carries
+										</td>
+										<td>225 IBS</td>
+										<td>400 meters</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Farmers Carries
+										</td>
+										<td>225 IBS</td>
+										<td>400 meters</td>
+									</tr>
+									<tr>
+										<td colspan="3" style="height:12.3em;">
+											<span>
+												<h1 class="display-4">2</h1>
+											</span>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit enim eos quo,
+											iure modi neque nihil deleniti illo, consequatur, officiis vel maxime quos
+											hic optio. Illum amet earum voluptates. Cupiditate!
+
+										</td>
+
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="px-3">
+						<div class="card text-center " style=" min-width: 35em;">
+
+							<table class="table  table-bordered table-hover">
+								<thead>
+									<tr>
+										<th style="height:3rem;"><input type="date" name="" id=""
+												class="form-control form-control-no-border ml-auto"> </th>
+
+										<th>
+											<select class="form-control form-control-no-border ">
+												<option>Lindsey </option>
+												<option>Meredith</option>
+												<option>Denzel </option>
+												<option>Jackson </option>
+												<option>San-J </option>
+												<option>Nigel </option>
+											</select></th>
+										<th>
+											<div
+												class=" form-control-no-border custom-control custom-switch form-control  ">
+												<input type="checkbox"
+													class="custom-control-input form-control-no-border"
+													id="customSwitch1">
+												<label class="custom-control-label form-control-no-border"
+													for="customSwitch1">Completed</label>
+											</div>
+										</th>
+									</tr>
+									<tr class="bg-primary text-light">
+										<th style="height:3rem;">Exercise</th>
+										<th>Weight</th>
+										<th>Sets</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr style="background:#f6fef6;">
+										<td style="height:3.5rem; ">
+
+
+											<span>Barbell Squats </span>
+											<span class="badge badge badge-outline-success text-muted d-block">Super
+												Set 1</span>
+
+										</td>
+										<td>375 IBS</td>
+										<td>5 Reps x 5 Sets</td>
+									</tr>
+									<tr style="background:
+									#fffbfb;">
+										<td style="height:3.5rem;">
+
+											Bench Press
+											<span class="badge badge badge-outline-success text-muted d-block">Super
+												Set 2</span>
+										</td>
+										<td>225 IBS</td>
+										<td>10 reps x 10 sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Push ups
+										</td>
+										<td>BW</td>
+										<td>20 reps 5 sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Farmers Carries
+										</td>
+										<td>225 IBS</td>
+										<td>400 meters</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Barbell Squats
+
+										</td>
+										<td>375 IBS</td>
+										<td>5 Reps x 5 Sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Bench Press
+										</td>
+										<td>225 IBS</td>
+										<td>10 reps x 10 sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Push ups
+										</td>
+										<td>BW</td>
+										<td>20 reps 5 sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Farmers Carries
+										</td>
+										<td>225 IBS</td>
+										<td>400 meters</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Farmers Carries
+										</td>
+										<td>225 IBS</td>
+										<td>400 meters</td>
+									</tr>
+									<tr>
+										<td colspan="3" style="height:12.3em;">
+											<span>
+												<h1 class="display-4">3</h1>
+											</span>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit enim eos quo,
+											iure modi neque nihil deleniti illo, consequatur, officiis vel maxime quos
+											hic optio. Illum amet earum voluptates. Cupiditate!
+
+										</td>
+
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="px-3">
+						<div class="card text-center " style=" min-width: 35em;">
+
+							<table class="table  table-bordered table-hover">
+								<thead>
+									<tr>
+										<th style="height:3rem;"><input type="date" name="" id=""
+												class="form-control form-control-no-border ml-auto"> </th>
+
+										<th>
+											<select class="form-control form-control-no-border ">
+												<option>Lindsey </option>
+												<option>Meredith</option>
+												<option>Denzel </option>
+												<option>Jackson </option>
+												<option>San-J </option>
+												<option>Nigel </option>
+											</select></th>
+										<th>
+											<div
+												class=" form-control-no-border custom-control custom-switch form-control  ">
+												<input type="checkbox"
+													class="custom-control-input form-control-no-border"
+													id="customSwitch1">
+												<label class="custom-control-label form-control-no-border"
+													for="customSwitch1">Completed</label>
+											</div>
+										</th>
+									</tr>
+									<tr class="bg-primary text-light">
+										<th style="height:3rem;">Exercise</th>
+										<th>Weight</th>
+										<th>Sets</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr style="background:#f6fef6;">
+										<td style="height:3.5rem; ">
+
+
+											<span>Barbell Squats </span>
+											<span class="badge badge badge-outline-success text-muted d-block">Super
+												Set 1</span>
+
+										</td>
+										<td>375 IBS</td>
+										<td>5 Reps x 5 Sets</td>
+									</tr>
+									<tr style="background:
+									#fffbfb;">
+										<td style="height:3.5rem;">
+
+											Bench Press
+											<span class="badge badge badge-outline-success text-muted d-block">Super
+												Set 2</span>
+										</td>
+										<td>225 IBS</td>
+										<td>10 reps x 10 sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Push ups
+										</td>
+										<td>BW</td>
+										<td>20 reps 5 sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Farmers Carries
+										</td>
+										<td>225 IBS</td>
+										<td>400 meters</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Barbell Squats
+
+										</td>
+										<td>375 IBS</td>
+										<td>5 Reps x 5 Sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Bench Press
+										</td>
+										<td>225 IBS</td>
+										<td>10 reps x 10 sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Push ups
+										</td>
+										<td>BW</td>
+										<td>20 reps 5 sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Farmers Carries
+										</td>
+										<td>225 IBS</td>
+										<td>400 meters</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Farmers Carries
+										</td>
+										<td>225 IBS</td>
+										<td>400 meters</td>
+									</tr>
+									<tr>
+										<td colspan="3" style="height:12.3em;">
+											<span>
+												<h1 class="display-4">4</h1>
+											</span>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit enim eos quo,
+											iure modi neque nihil deleniti illo, consequatur, officiis vel maxime quos
+											hic optio. Illum amet earum voluptates. Cupiditate!
+
+										</td>
+
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="px-3">
+						<div class="card text-center " style=" min-width: 35em;">
+
+							<table class="table  table-bordered table-hover">
+								<thead>
+									<tr>
+										<th style="height:3rem;"><input type="date" name="" id=""
+												class="form-control form-control-no-border ml-auto"> </th>
+
+										<th>
+											<select class="form-control form-control-no-border ">
+												<option>Lindsey </option>
+												<option>Meredith</option>
+												<option>Denzel </option>
+												<option>Jackson </option>
+												<option>San-J </option>
+												<option>Nigel </option>
+											</select></th>
+										<th>
+											<div
+												class=" form-control-no-border custom-control custom-switch form-control  ">
+												<input type="checkbox"
+													class="custom-control-input form-control-no-border"
+													id="customSwitch1">
+												<label class="custom-control-label form-control-no-border"
+													for="customSwitch1">Completed</label>
+											</div>
+										</th>
+									</tr>
+									<tr class="bg-primary text-light">
+										<th style="height:3rem;">Exercise</th>
+										<th>Weight</th>
+										<th>Sets</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr style="background:#f6fef6;">
+										<td style="height:3.5rem; ">
+
+
+											<span>Barbell Squats </span>
+											<span class="badge badge badge-outline-success text-muted d-block">Super
+												Set 1</span>
+
+										</td>
+										<td>375 IBS</td>
+										<td>5 Reps x 5 Sets</td>
+									</tr>
+									<tr style="background:
+									#fffbfb;">
+										<td style="height:3.5rem;">
+
+											Bench Press
+											<span class="badge badge badge-outline-success text-muted d-block">Super
+												Set 2</span>
+										</td>
+										<td>225 IBS</td>
+										<td>10 reps x 10 sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Push ups
+										</td>
+										<td>BW</td>
+										<td>20 reps 5 sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Farmers Carries
+										</td>
+										<td>225 IBS</td>
+										<td>400 meters</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Barbell Squats
+
+										</td>
+										<td>375 IBS</td>
+										<td>5 Reps x 5 Sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Bench Press
+										</td>
+										<td>225 IBS</td>
+										<td>10 reps x 10 sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Push ups
+										</td>
+										<td>BW</td>
+										<td>20 reps 5 sets</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Farmers Carries
+										</td>
+										<td>225 IBS</td>
+										<td>400 meters</td>
+									</tr>
+									<tr>
+										<td style="height:3.5rem;">
+											Farmers Carries
+										</td>
+										<td>225 IBS</td>
+										<td>400 meters</td>
+									</tr>
+									<tr>
+										<td colspan="3" style="height:12.3em;">
+											<span>
+												<h1 class="display-4">5</h1>
+											</span>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit enim eos quo,
+											iure modi neque nihil deleniti illo, consequatur, officiis vel maxime quos
+											hic optio. Illum amet earum voluptates. Cupiditate!
+
+										</td>
+
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+
+					</div>
+
+				</div>
+
+
+			</main>
+
+			<footer class="footer">
+				<div class="footer-content">
+
+				</div>
+
+			</footer>
+		</div>
+	</div>
+
+	<script src="../dist/js/app.js"></script>
+
+</body>
+
+</html>

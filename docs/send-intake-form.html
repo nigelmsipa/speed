@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
+	<meta name="author" content="Bootlab">
+
+	<title>Initial Assement</title>
+
+	<link rel="preconnect" href="//fonts.gstatic.com/" crossorigin>
+
+	<!-- PICK ONE OF THE STYLES BELOW -->
+	<!-- <link href="css/corporate.css" rel="stylesheet"> -->
+	<!-- <link href="css/modern.css" rel="stylesheet"> -->
+	<link href="../dist/css/classic.css" rel="stylesheet">
+	<script>
+		fetch("sidebar.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".sidebar-content").innerHTML = data;
+			});
+		fetch("topnav.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".top-nav-content").innerHTML = data;
+			});
+		fetch("footer.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".footer-content").innerHTML = data;
+			});
+	</script>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar">
+			<div class="sidebar-content ">
+				<div>
+		</nav>
+
+
+		<div class="main">
+			<div class="top-nav-content">
+
+			</div>
+
+
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<div class=" d-flex align-items-center justify-content-center mt-5 mb-5">
+						<div class="card text-center" style="width:50em;">
+							<img class="card-img-top" src="/docs/img/photos/undraw_Portfolio_update_re_jqnp (1).svg">
+							<div class=" card-header">
+								<a href="/docs/intake-form.html">
+									<h5 class="card-title mb-0">Send Intake Form</h5>
+								</a>
+							</div>
+							<div class="card-body">
+								<p class="card-text">The first step in creating a killer exersice-program is collecting
+									all the relavant information.</p>
+								<input type="email" class="form-control mb-2" id="exampleInputEmail1"
+									aria-describedby="emailHelp" placeholder="Enter email">
+								<a href="#" class="btn btn-primary btn-block">Send email</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div class="footer-content">
+
+				</div>
+
+			</footer>
+		</div>
+	</div>
+
+	<script src="../dist/js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
+	<meta name="author" content="Bootlab">
+
+	<title>Initial Assement</title>
+
+	<link rel="preconnect" href="//fonts.gstatic.com/" crossorigin>
+
+	<!-- PICK ONE OF THE STYLES BELOW -->
+	<!-- <link href="css/corporate.css" rel="stylesheet"> -->
+	<!-- <link href="css/modern.css" rel="stylesheet"> -->
+	<link href="../dist/css/classic.css" rel="stylesheet">
+	<script>
+		fetch("sidebar.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".sidebar-content").innerHTML = data;
+			});
+		fetch("topnav.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".top-nav-content").innerHTML = data;
+			});
+		fetch("footer.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".footer-content").innerHTML = data;
+			});
+	</script>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar">
+			<div class="sidebar-content ">
+				<div>
+		</nav>
+
+
+		<div class="main">
+			<div class="top-nav-content">
+
+			</div>
+
+
+			<main class="content">
+				<div class="container-fluid p-0 d-flex flex-row overflow-auto ">
+					<div class="px-3">
+						<div class="card card-hover" style="width: 18rem;">
+							<img class="card-img-top" src="/src/img/photos/blo.svg" alt="Card image cap">
+							<ul class="list-group list-group-flush">
+								<a href="client-info.html">
+									<li class="list-group-item ">Client Info</li>
+								</a>
+								<a href="exersice-prescription.html">
+									<li class="list-group-item ">Exercise Prescription </li>
+								</a>
+								<a href="progression-key.html">
+									<li class="list-group-item ">Progression key</li>
+								</a>
+								<a href="workout-log.html">
+									<li class="list-group-item ">Workout Log </li>
+								</a>
+								<a href="workout-log.html">
+									<li class="list-group-item active">Homework </li>
+								</a>
+								<a href="workout-log.html">
+									<li class="list-group-item">Statistics </li>
+								</a>
+								<a href="workout-log.html">
+									<li class="list-group-item">Archive </li>
+								</a>
+							</ul>
+						</div>
+					</div>
+					<!-- Card -->
+					<div class="card">
+						<div class="card-header">
+
+						</div>
+
+						<!-- Table -->
+						<div class="table-responsive">
+							<table id="basicDatatable"
+								class="table table-borderless table-thead-bordered table-nowrap table-align-middle card-table"
+								data-hs-datatables-options='{
+			   "order": []
+			 }'>
+								<thead class="thead-light">
+									<tr>
+										<th>Name</th>
+										<th>Position</th>
+
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr>
+										<td>
+											<a class="media align-items-center" href="../user-profile.html">
+												<div class="avatar avatar-circle mr-3">
+
+												</div>
+												<div class="media-body">
+													<span class="d-block h5 text-hover-primary mb-0">Amanda Harvey <i
+															class="tio-verified text-primary" data-toggle="tooltip"
+															data-placement="top" title="Top endorsed"></i></span>
+													<span
+														class="d-block font-size-sm text-body">amanda@example.com</span>
+												</div>
+											</a>
+										</td>
+										<td>
+											<span class="d-block h5 mb-0">Director</span>
+											<span class="d-block font-size-sm">Human resources</span>
+										</td>
+
+									</tr>
+
+									<tr>
+										<td>
+											<a class="media align-items-center" href="../user-profile.html">
+												<div class="avatar avatar-soft-primary avatar-circle mr-3">
+												</div>
+												<div class="media-body">
+													<span class="d-block h5 text-hover-primary mb-0">Anne Richard</span>
+													<span class="d-block font-size-sm text-body">anne@example.com</span>
+												</div>
+											</a>
+										</td>
+										<td>
+											<span class="d-block h5 mb-0">Seller</span>
+											<span class="d-block font-size-sm">Branding products</span>
+										</td>
+
+									</tr>
+
+									<tr>
+										<td>
+											<a class="media align-items-center" href="../user-profile.html">
+												<div class="avatar avatar-circle mr-3">
+
+												</div>
+												<div class="media-body">
+													<span class="d-block h5 text-hover-primary mb-0">David
+														Harrison</span>
+													<span
+														class="d-block font-size-sm text-body">david@example.com</span>
+												</div>
+											</a>
+										</td>
+										<td>
+											<span class="d-block h5 mb-0">Unknown</span>
+											<span class="d-block font-size-sm">Unknown</span>
+										</td>
+
+									</tr>
+
+									<tr>
+										<td>
+											<a class="media align-items-center" href="../user-profile.html">
+												<div class="avatar avatar-circle mr-3">
+
+												</div>
+												<div class="media-body">
+													<span class="d-block h5 text-hover-primary mb-0">Finch Hoot</span>
+													<span
+														class="d-block font-size-sm text-body">finch@example.com</span>
+												</div>
+											</a>
+										</td>
+										<td>
+											<span class="d-block h5 mb-0">Designer</span>
+											<span class="d-block font-size-sm">IT department</span>
+										</td>
+
+									</tr>
+
+									<tr>
+										<td>
+											<a class="media align-items-center" href="../user-profile.html">
+												<div class="avatar avatar-soft-dark avatar-circle mr-3">
+												</div>
+												<div class="media-body">
+													<span class="d-block h5 text-hover-primary mb-0">Bob Dean</span>
+													<span class="d-block font-size-sm text-body">bob@example.com</span>
+												</div>
+											</a>
+										</td>
+										<td>
+											<span class="d-block h5 mb-0">Executive director</span>
+											<span class="d-block font-size-sm">Marketing</span>
+										</td>
+
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- End Table -->
+					</div>
+					<!-- End Card -->
+
+
+
+				</div>
+
+
+			</main>
+
+			<footer class="footer">
+				<div class="footer-content">
+
+				</div>
+
+			</footer>
+		</div>
+	</div>
+
+	<script src="../dist/js/app.js"></script>
+
+</body>
+
+</html>

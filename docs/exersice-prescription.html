@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
+	<meta name="author" content="Bootlab">
+
+	<title>Initial Assement</title>
+
+	<link rel="preconnect" href="//fonts.gstatic.com/" crossorigin>
+
+	<!-- PICK ONE OF THE STYLES BELOW -->
+	<!-- <link href="css/corporate.css" rel="stylesheet"> -->
+	<!-- <link href="css/modern.css" rel="stylesheet"> -->
+	<link href="../dist/css/classic.css" rel="stylesheet">
+	<script>
+		fetch("sidebar.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".sidebar-content").innerHTML = data;
+			});
+		fetch("topnav.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".top-nav-content").innerHTML = data;
+			});
+		fetch("footer.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".footer-content").innerHTML = data;
+			});
+	</script>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar">
+			<div class="sidebar-content ">
+				<div>
+		</nav>
+
+
+		<div class="main">
+			<div class="top-nav-content">
+
+			</div>
+
+
+			<main class="content">
+				<div class="container-fluid p-0 d-flex flex-row overflow-auto ">
+					<div class="px-3">
+						<div class="card card-hover" style="width: 18rem;">
+							<img class="card-img-top" src="/src/img/photos/blo.svg" alt="Card image cap">
+							<ul class="list-group list-group-flush">
+								<a href="client-info.html">
+									<li class="list-group-item ">Client Info</li>
+								</a>
+								<a href="exersice-prescription.html">
+									<li class="list-group-item active">Exercise Prescription </li>
+								</a>
+								<a href="progression-key.html">
+									<li class="list-group-item ">Progression key</li>
+								</a>
+								<a href="workout-log.html">
+									<li class="list-group-item">Workout Log </li>
+								</a>
+
+							</ul>
+						</div>
+					</div>
+
+
+					<div class="px-3 container-fluid">
+
+						<div class="card">
+
+
+							<table class=" table table-bordered text-center table-hover table-responsive-sm">
+								<!--Table row   -->
+								<tr>
+
+									<th class="bg-primary text-light" colspan="4"> Training Parameters
+									</th>
+
+
+								<tr>
+
+								<tr>
+									<td style="width: 8rem; "> Training Goal </td>
+									<td style="width: 8rem;"> <b>Strength </b> </td>
+									<td style="width: 8rem;"> <b>Hypertrophy</b></td>
+									<td style="width: 8rem;"><b>Enduarance</b></td>
+								</tr>
+								<tr>
+									<td>Frequency</td>
+									<td> 3x per week</td>
+									<td>3x per week</td>
+									<td>2x per week</td>
+								</tr>
+								<tr>
+									<td>Intensity</td>
+									<td>High</td>
+									<td>Moderate</td>
+									<td>Low</td>
+
+
+								<tr>
+									<td>Time</td>
+									<td>45 minutes</td>
+									<td>45 minutes</td>
+									<td>45 minutes</td>
+								</tr>
+								<tr>
+									<td>Type</td>
+									<td>Resistance Training</td>
+									<td>Resistance Training</td>
+									<td>Cardio </td>
+
+
+								</tr>
+								<tr>
+									<td>Volume</td>
+									<td>Low</td>
+									<td>High</td>
+									<td>High</td>
+
+
+
+								</tr>
+
+
+
+
+
+							</table>
+
+						</div>
+
+						<div class="card">
+
+
+
+							<table class=" table table-bordered text-center table-hover table-responsive-sm ">
+								<!--Table row   -->
+								<tr>
+
+									<th class="bg-primary text-light" colspan="4"> Training Metrics
+									</th>
+
+
+								<tr>
+
+
+
+								<tr>
+									<td style="width: 8rem;">Training Goal</td>
+									<td style="width: 8rem;"> Strength </td>
+									<td style="width: 8rem;">Hypertrophy</td>
+									<td style="width: 8rem;">Enduarance</td>
+								</tr>
+								<tr>
+									<td> Client Metric</td>
+									<td> Carry my grandchild </td>
+									<td>Toned arms</td>
+									<td>Run around the block</td>
+								</tr>
+								<tr>
+									<td>Primary Metric</td>
+									<td>Squat</td>
+									<td>Weight</td>
+									<td>Vo2 - Max</td>
+
+
+								<tr>
+									<td>Secondary Metric</td>
+									<td>Bench</td>
+									<td>Body composition</td>
+									<td>1.5 Mile run</td>
+								</tr>
+								<tr>
+									<td>Tertiary Metric</td>
+									<td>Deadlift</td>
+									<td>Girth measurements</td>
+									<td>Step Test </td>
+
+
+								</tr>
+								<tr>
+									<td>Quaternary Metric</td>
+									<td>Overhead Press</td>
+									<td>BMI</td>
+									<td>Rowing</td>
+
+
+
+								</tr>
+
+
+
+
+
+							</table>
+
+						</div>
+
+						<div class="card">
+
+							<table class=" table table-bordered text-center table-hover table-responsive-sm ">
+								<!--Table row   -->
+								<tr>
+
+									<th class="bg-primary text-light" colspan="4"> Adhearance
+									</th>
+
+
+								<tr>
+
+
+
+								<tr>
+									<td style="width: 8rem;">Training Goal</td>
+									<td style="width: 8rem;"> Strength </td>
+									<td style="width: 8rem;">Hypertrophy</td>
+									<td style="width: 8rem;">Enduarance</td>
+								</tr>
+								<tr>
+									<td> Expectancy </td>
+									<td>Low </td>
+									<td>Low</td>
+									<td>High</td>
+								</tr>
+								<tr>
+									<td>Value </td>
+									<td>High</td>
+									<td>High</td>
+									<td>Low</td>
+
+
+								<tr>
+									<td>Impulsivity</td>
+									<td>High</td>
+									<td>High</td>
+									<td>Low</td>
+								</tr>
+								<tr>
+									<td>Delay </td>
+									<td>High</td>
+									<td>High</td>
+									<td>Low</td>
+
+
+								</tr>
+
+
+
+
+
+
+							</table>
+						</div>
+
+						<div class="card">
+
+
+
+							<table class=" table table-bordered text-center table-hover table-responsive-sm ">
+								<!--Table row   -->
+								<tr>
+
+									<th class="bg-primary text-light" colspan="4"> Individual Differances
+									</th>
+
+
+								<tr>
+
+
+
+								<tr>
+									<td style="width: 8rem;">Training Goal</td>
+									<td style="width: 8rem;"> Strength </td>
+									<td style="width: 8rem;">Hypertrophy</td>
+									<td style="width: 8rem;">Enduarance</td>
+								</tr>
+
+								<tr>
+									<td> Injuries</td>
+									<td> </td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td> Special populations</td>
+									<td></td>
+									<td></td>
+									<td></td>
+
+								</tr>
+
+
+
+
+
+
+
+							</table>
+
+						</div>
+
+						<div class="card">
+
+
+
+							<table class=" table table-bordered text-center table-hover table-responsive-sm ">
+								<!--Table row   -->
+								<tr>
+
+									<th class="bg-primary text-light" colspan="4"> Fatigue Manegment
+									</th>
+
+
+								<tr>
+
+
+
+								<tr>
+									<td style="width: 8rem;">Training Goal</td>
+									<td style="width: 8rem;"> Strength </td>
+									<td style="width: 8rem;">Hypertrophy</td>
+									<td style="width: 8rem;">Enduarance</td>
+								</tr>
+								<tr>
+									<td> Start </td>
+									<td> </td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>End </td>
+									<td></td>
+									<td></td>
+									<td></td>
+
+
+								</tr>
+
+
+
+
+
+							</table>
+
+						</div>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+				</div>
+
+			</main>
+
+			<footer class="footer">
+				<div class="footer-content">
+
+				</div>
+
+			</footer>
+		</div>
+	</div>
+
+	<script src="../dist/js/app.js"></script>
+
+</body>
+
+</html>

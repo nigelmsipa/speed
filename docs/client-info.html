@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
+	<meta name="author" content="Bootlab">
+
+	<title>Initial Assement</title>
+
+	<link rel="preconnect" href="//fonts.gstatic.com/" crossorigin>
+
+	<!-- PICK ONE OF THE STYLES BELOW -->
+	<!-- <link href="css/corporate.css" rel="stylesheet"> -->
+	<!-- <link href="css/modern.css" rel="stylesheet"> -->
+	<link href="../dist/css/classic.css" rel="stylesheet">
+	<script>
+		fetch("sidebar.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".sidebar-content").innerHTML = data;
+			});
+		fetch("topnav.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".top-nav-content").innerHTML = data;
+			});
+		fetch("footer.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".footer-content").innerHTML = data;
+			});
+	</script>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar">
+			<div class="sidebar-content ">
+				<div>
+		</nav>
+
+
+		<div class="main">
+			<div class="top-nav-content">
+
+			</div>
+
+			<main class="content">
+				<div class="container-fluid p-0 d-flex flex-row overflow-auto ">
+					<div class="px-3">
+						<div class="card card-hover" style="width: 18rem;">
+							<img class="card-img-top" src="/src/img/photos/blo.svg" alt="Card image cap">
+							<ul class="list-group list-group-flush">
+								<a href="client-info.html">
+									<li class="list-group-item active">Client Info</li>
+								</a>
+								<a href="exersice-prescription.html">
+									<li class="list-group-item ">Exercise Prescription </li>
+								</a>
+								<a href="progression-key.html">
+									<li class="list-group-item ">Progression key</li>
+								</a>
+								<a href="workout-log.html">
+									<li class="list-group-item">Workout Log </li>
+								</a>
+
+							</ul>
+						</div>
+					</div>
+
+
+					<div class="px-3 container-fluid">
+
+						<div class="card">
+
+
+							<table class=" table table-bordered  table-hover table-responsive-sm">
+								<!--Table row   -->
+								<tr>
+
+									<th class="bg-primary text-light text-center" colspan="2"> Contact Info
+									</th>
+
+
+								<tr>
+
+
+								<tr>
+									<td style="width: 10rem;">Full Name</td>
+									<td>Maisie Briggs
+
+									</td>
+
+								</tr>
+								<tr>
+									<td>Phone number</td>
+									<td>703-545-5453
+									</td>
+
+
+								<tr>
+									<td>Email Adress</td>
+									<td>Maisiebriggs@gmail.com
+
+									</td>
+
+								</tr>
+
+
+
+
+
+
+							</table>
+
+						</div>
+
+						<div class="card">
+
+
+
+
+							<table class=" table table-bordered  table-hover table-responsive-sm">
+								<!--Table row   -->
+								<tr>
+
+									<th class="bg-primary text-light text-center" colspan="2"> Goal Setting
+									</th>
+
+
+								<tr>
+
+
+								<tr>
+									<td style="width: 10rem;">Specific </td>
+									<td> I want to lose 3 lbs of body fat
+
+									</td>
+
+								</tr>
+								<tr>
+									<td>Measurable </td>
+									<td>When I can fit into my clothes better
+
+									</td>
+
+
+								<tr>
+									<td>Attainable </td>
+									<td>Obstacles, learning to rethink why and what I eat.
+									</td>
+
+								</tr>
+								<tr>
+									<td>Relevant </td>
+									<td>Longevity and learning to eat appropriately
+
+									</td>
+
+								</tr>
+								<tr>
+									<td>Timely </td>
+									<td>June 23 2020</td>
+
+								</tr>
+
+
+
+
+
+
+							</table>
+
+						</div>
+
+						<div class="card">
+
+
+							<table class=" table table-bordered  table-hover table-responsive-sm">
+								<!--Table row   -->
+								<tr>
+
+									<th class="bg-primary text-light text-center" colspan="2"> Adhearance
+
+
+									</th>
+
+
+								<tr>
+
+
+								<tr>
+									<td style="width: 10rem;"> Expectancy
+									</td>
+									<td> I am <b>NOT</b> very confident I can achieve this. </td>
+
+								</tr>
+								<tr>
+									<td>Value</td>
+									<td>This goal is <b>NOT</b> very important to me.</td>
+
+
+								<tr>
+									<td>Impulsivity </td>
+									<td>I have like <b>NO</b> self control. </td>
+
+								</tr>
+								<tr>
+									<td>Delay </td>
+									<td>I am <b>NOT</b> willing to wait that long</td>
+
+								</tr>
+
+
+
+
+
+							</table>
+						</div>
+
+						<div class="card">
+
+
+
+							<table class=" table table-bordered  table-hover table-responsive-sm">
+								<!--Table row   -->
+								<tr>
+
+									<th class="bg-primary text-light text-center" colspan="2"> Individual Differances
+
+									</th>
+
+
+								<tr>
+
+
+								<tr>
+									<td style="width: 10rem;">Sex</td>
+									<td> Female</td>
+
+								</tr>
+								<tr>
+									<td>Age </td>
+									<td> 30</td>
+
+
+								<tr>
+									<td>Weight </td>
+									<td>145</td>
+
+								</tr>
+								<tr>
+									<td>Height </td>
+									<td>5'10</td>
+
+								</tr>
+
+								<tr>
+									<td>Injuries </td>
+									<td>Torn ACL two years ago</td>
+
+								</tr>
+
+
+
+							</table>
+
+						</div>
+
+						<div class="card">
+
+
+
+
+							<table class=" table table-bordered  table-hover table-responsive-sm">
+								<!--Table row   -->
+								<tr>
+
+									<th class="bg-primary text-light text-center" colspan="2"> Fatigue management
+									</th>
+
+
+								<tr>
+
+
+								<tr>
+									<td style="width: 10rem;"> Stress levels </td>
+									<td> I generally experience Moderate levels of stress daily </td>
+
+								</tr>
+								<tr>
+									<td> Sleep quality </td>
+									<td>I generally get 7 hours of Sleep every night</td>
+
+
+								<tr>
+									<td> Daily activity
+									</td>
+									<td> I meet ACSM exersice guidelines </td>
+
+								</tr>
+
+
+
+
+
+
+							</table>
+
+						</div>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+				</div>
+
+			</main>
+
+			<footer class="footer">
+				<div class="footer-content">
+
+				</div>
+
+			</footer>
+		</div>
+	</div>
+
+	<script src="../dist/js/app.js"></script>
+
+</body>
+
+</html>

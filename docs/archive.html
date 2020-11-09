@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
+	<meta name="author" content="Bootlab">
+
+	<title>Initial Assement</title>
+
+	<link rel="preconnect" href="//fonts.gstatic.com/" crossorigin>
+
+	<!-- PICK ONE OF THE STYLES BELOW -->
+	<!-- <link href="css/corporate.css" rel="stylesheet"> -->
+	<!-- <link href="css/modern.css" rel="stylesheet"> -->
+	<link href="../dist/css/classic.css" rel="stylesheet">
+	<script>
+		fetch("sidebar.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".sidebar-content").innerHTML = data;
+			});
+		fetch("topnav.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".top-nav-content").innerHTML = data;
+			});
+		fetch("footer.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".footer-content").innerHTML = data;
+			});
+	</script>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar">
+			<div class="sidebar-content ">
+				<div>
+		</nav>
+
+
+		<div class="main">
+			<div class="top-nav-content">
+
+			</div>
+
+
+			<main class="content">
+				<div class="container-fluid p-0 d-flex flex-row overflow-auto ">
+					<div class="px-3">
+						<div class="card card-hover" style="width: 18rem;">
+							<img class="card-img-top" src="/src/img/photos/blo.svg" alt="Card image cap">
+							<ul class="list-group list-group-flush">
+								<a href="client-info.html">
+									<li class="list-group-item ">Client Info</li>
+								</a>
+								<a href="exersice-prescription.html">
+									<li class="list-group-item ">Exercise Prescription </li>
+								</a>
+								<a href="progression-key.html">
+									<li class="list-group-item ">Progression key</li>
+								</a>
+								<a href="workout-log.html">
+									<li class="list-group-item ">Workout Log </li>
+								</a>
+								<a href="workout-log.html">
+									<li class="list-group-item ">Homework </li>
+								</a>
+
+								<a href="workout-log.html">
+									<li class="list-group-item active">Archive </li>
+								</a>
+							</ul>
+						</div>
+					</div>
+					<div class="container-fluid p-0">
+
+						<a href="#" class="btn btn-primary float-right mt-n1"><i class="fas fa-plus"></i> Add to Archive
+						</a>
+						<h1 class="h3 mb-3">Archived Programs</h1>
+
+						<div class="card-deck">
+							<div class="card">
+
+								<div class="card-header px-4 pt-4">
+									<div class="card-actions float-right">
+										<div class="dropdown show">
+											<a href="#" data-toggle="dropdown" data-display="static">
+												<i class="align-middle" data-feather="more-horizontal"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</div>
+									<h5 class="card-title mb-0">Landing page redesign</h5>
+									<div class="badge badge-success my-2">Finished</div>
+								</div>
+								<div class="card-body px-4 pt-2">
+									<p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
+										libero, sit amet adipiscing sem neque sed ipsum.</p>
+
+									<img src="img/avatars/avatar-3.jpg" class="rounded-circle mr-1" alt="Avatar"
+										width="28" height="28">
+									<img src="img/avatars/avatar-2.jpg" class="rounded-circle mr-1" alt="Avatar"
+										width="28" height="28">
+									<img src="img/avatars/avatar.jpg" class="rounded-circle mr-1" alt="Avatar"
+										width="28" height="28">
+								</div>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item px-4 pb-4">
+										<p class="mb-2 font-weight-bold">Progress <span class="float-right">100%</span>
+										</p>
+										<div class="progress progress-sm">
+											<div class="progress-bar" role="progressbar" aria-valuenow="100"
+												aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="card">
+
+								<div class="card-header px-4 pt-4">
+									<div class="card-actions float-right">
+										<div class="dropdown show">
+											<a href="#" data-toggle="dropdown" data-display="static">
+												<i class="align-middle" data-feather="more-horizontal"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</div>
+									<h5 class="card-title mb-0">Landing page redesign</h5>
+									<div class="badge badge-success my-2">Finished</div>
+								</div>
+								<div class="card-body px-4 pt-2">
+									<p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
+										libero, sit amet adipiscing sem neque sed ipsum.</p>
+
+									<img src="img/avatars/avatar-3.jpg" class="rounded-circle mr-1" alt="Avatar"
+										width="28" height="28">
+									<img src="img/avatars/avatar-2.jpg" class="rounded-circle mr-1" alt="Avatar"
+										width="28" height="28">
+									<img src="img/avatars/avatar.jpg" class="rounded-circle mr-1" alt="Avatar"
+										width="28" height="28">
+								</div>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item px-4 pb-4">
+										<p class="mb-2 font-weight-bold">Progress <span class="float-right">100%</span>
+										</p>
+										<div class="progress progress-sm">
+											<div class="progress-bar" role="progressbar" aria-valuenow="100"
+												aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="card">
+
+								<div class="card-header px-4 pt-4">
+									<div class="card-actions float-right">
+										<div class="dropdown show">
+											<a href="#" data-toggle="dropdown" data-display="static">
+												<i class="align-middle" data-feather="more-horizontal"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</div>
+									<h5 class="card-title mb-0">Landing page redesign</h5>
+									<div class="badge badge-success my-2">Finished</div>
+								</div>
+								<div class="card-body px-4 pt-2">
+									<p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
+										libero, sit amet adipiscing sem neque sed ipsum.</p>
+
+									<img src="img/avatars/avatar-3.jpg" class="rounded-circle mr-1" alt="Avatar"
+										width="28" height="28">
+									<img src="img/avatars/avatar-2.jpg" class="rounded-circle mr-1" alt="Avatar"
+										width="28" height="28">
+									<img src="img/avatars/avatar.jpg" class="rounded-circle mr-1" alt="Avatar"
+										width="28" height="28">
+								</div>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item px-4 pb-4">
+										<p class="mb-2 font-weight-bold">Progress <span class="float-right">100%</span>
+										</p>
+										<div class="progress progress-sm">
+											<div class="progress-bar" role="progressbar" aria-valuenow="100"
+												aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+						<div class="card-deck mt-3">
+							<div class="card">
+
+								<div class="card-header px-4 pt-4">
+									<div class="card-actions float-right">
+										<div class="dropdown show">
+											<a href="#" data-toggle="dropdown" data-display="static">
+												<i class="align-middle" data-feather="more-horizontal"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</div>
+									<h5 class="card-title mb-0">Landing page redesign</h5>
+									<div class="badge badge-success my-2">Finished</div>
+								</div>
+								<div class="card-body px-4 pt-2">
+									<p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
+										libero, sit amet adipiscing sem neque sed ipsum.</p>
+
+									<img src="img/avatars/avatar-3.jpg" class="rounded-circle mr-1" alt="Avatar"
+										width="28" height="28">
+									<img src="img/avatars/avatar-2.jpg" class="rounded-circle mr-1" alt="Avatar"
+										width="28" height="28">
+									<img src="img/avatars/avatar.jpg" class="rounded-circle mr-1" alt="Avatar"
+										width="28" height="28">
+								</div>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item px-4 pb-4">
+										<p class="mb-2 font-weight-bold">Progress <span class="float-right">100%</span>
+										</p>
+										<div class="progress progress-sm">
+											<div class="progress-bar" role="progressbar" aria-valuenow="100"
+												aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="card">
+
+								<div class="card-header px-4 pt-4">
+									<div class="card-actions float-right">
+										<div class="dropdown show">
+											<a href="#" data-toggle="dropdown" data-display="static">
+												<i class="align-middle" data-feather="more-horizontal"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</div>
+									<h5 class="card-title mb-0">Landing page redesign</h5>
+									<div class="badge badge-success my-2">Finished</div>
+								</div>
+								<div class="card-body px-4 pt-2">
+									<p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
+										libero, sit amet adipiscing sem neque sed ipsum.</p>
+
+									<img src="img/avatars/avatar-3.jpg" class="rounded-circle mr-1" alt="Avatar"
+										width="28" height="28">
+									<img src="img/avatars/avatar-2.jpg" class="rounded-circle mr-1" alt="Avatar"
+										width="28" height="28">
+									<img src="img/avatars/avatar.jpg" class="rounded-circle mr-1" alt="Avatar"
+										width="28" height="28">
+								</div>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item px-4 pb-4">
+										<p class="mb-2 font-weight-bold">Progress <span class="float-right">100%</span>
+										</p>
+										<div class="progress progress-sm">
+											<div class="progress-bar" role="progressbar" aria-valuenow="100"
+												aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="card">
+
+								<div class="card-header px-4 pt-4">
+									<div class="card-actions float-right">
+										<div class="dropdown show">
+											<a href="#" data-toggle="dropdown" data-display="static">
+												<i class="align-middle" data-feather="more-horizontal"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</div>
+									<h5 class="card-title mb-0">Landing page redesign</h5>
+									<div class="badge badge-success my-2">Finished</div>
+								</div>
+								<div class="card-body px-4 pt-2">
+									<p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
+										libero, sit amet adipiscing sem neque sed ipsum.</p>
+
+									<img src="img/avatars/avatar-3.jpg" class="rounded-circle mr-1" alt="Avatar"
+										width="28" height="28">
+									<img src="img/avatars/avatar-2.jpg" class="rounded-circle mr-1" alt="Avatar"
+										width="28" height="28">
+									<img src="img/avatars/avatar.jpg" class="rounded-circle mr-1" alt="Avatar"
+										width="28" height="28">
+								</div>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item px-4 pb-4">
+										<p class="mb-2 font-weight-bold">Progress <span class="float-right">100%</span>
+										</p>
+										<div class="progress progress-sm">
+											<div class="progress-bar" role="progressbar" aria-valuenow="100"
+												aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+
+
+
+
+				</div>
+
+
+			</main>
+
+			<footer class="footer">
+				<div class="footer-content">
+
+				</div>
+
+			</footer>
+		</div>
+	</div>
+
+	<script src="../dist/js/app.js"></script>
+
+</body>
+
+</html>
