@@ -2,61 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
-    <meta name="author" content="Bootlab">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
+	<meta name="author" content="Bootlab">
 
-    <title>Initial Assement</title>
+	<title>Initial Assement</title>
 
-    <link rel="preconnect" href="//fonts.gstatic.com/" crossorigin>
+	<link rel="preconnect" href="//fonts.gstatic.com/" crossorigin>
 
-    <!-- PICK ONE OF THE STYLES BELOW -->
-    <!-- <link href="css/corporate.css" rel="stylesheet"> -->
-    <!-- <link href="css/modern.css" rel="stylesheet"> -->
-    <link href="../dist/css/classic.css" rel="stylesheet">
-    <script>
-        fetch("sidebar.html")
-            .then(response => {
-                return response.text()
-            })
-            .then(data => {
-                document.querySelector(".sidebar-content").innerHTML = data;
-            });
-        fetch("topnav.html")
-            .then(response => {
-                return response.text()
-            })
-            .then(data => {
-                document.querySelector(".top-nav-content").innerHTML = data;
-            });
-        fetch("footer.html")
-            .then(response => {
-                return response.text()
-            })
-            .then(data => {
-                document.querySelector(".footer-content").innerHTML = data;
-            });
-    </script>
+	<!-- PICK ONE OF THE STYLES BELOW -->
+	<!-- <link href="css/corporate.css" rel="stylesheet"> -->
+	<!-- <link href="css/modern.css" rel="stylesheet"> -->
+	<link href="../docs/css/classic.css" rel="stylesheet">
+	<script src="../partials.js"></script>
+	<script src="/docs/js/app.js" defer></script>
+
 
 </head>
 
 <body>
-    <div class="wrapper">
-        <nav id="sidebar" class="sidebar">
-            <div class="sidebar-content ">
-                <div>
-        </nav>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar">
+			<div class="sidebar-content ">
+				<div>
+		</nav>
 
 
-        <div class="main">
-            <div class="top-nav-content">
+		<div class="main">
+			<div class="top-nav-content">
 
-            </div>
+			</div>
 
 
- 
+
 			<main class="content">
 				<div class="container-fluid p-0">
 
@@ -366,16 +346,16 @@
 				</div>
 			</main>
 
-            <footer class="footer">
-                <div class="footer-content">
+			<footer class="footer">
+				<div class="footer-content">
 
-                </div>
+				</div>
 
-            </footer>
-        </div>
-    </div>
+			</footer>
+		</div>
+	</div>
 
-    <script src="../dist/js/app.js"></script>
+
 
 </body>
 
