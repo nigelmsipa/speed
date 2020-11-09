@@ -34,6 +34,13 @@
 			.then(data => {
 				document.querySelector(".footer-content").innerHTML = data;
 			});
+		fetch("client-profile-links.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".client-info-links").innerHTML = data;
+			});
 	</script>
 
 </head>
@@ -94,27 +101,11 @@
 
 			<main class="content">
 				<div class="container-fluid p-0 d-flex flex-row overflow-auto ">
-					<div class="px-3">
-						<div class="card card-hover" style="width: 18rem;">
-							<img class="card-img-top" src="/src/img/photos/blo.svg" alt="Card image cap">
-							<ul class="list-group list-group-flush">
-								<a href="client-info.html">
-									<li class="list-group-item ">Client Info</li>
-								</a>
-								<a href="exersice-prescription.html">
-									<li class="list-group-item ">Exercise Prescription </li>
-								</a>
-								<a href="progression-key.html">
-									<li class="list-group-item active ">Progression key</li>
-								</a>
-								<a href="workout-log.html">
-									<li class="list-group-item">Workout Log </li>
-								</a>
+					<div class="client-info-links">
 
-							</ul>
-						</div>
+
+
 					</div>
-
 
 					<div class="  px-3">
 
@@ -125,7 +116,7 @@
 								<!--Table row   -->
 								<tr>
 
-									<th class="bg-primary text-light" style="min-width: 12rem;"> Exercise </th>
+									<th class="bg-primary text-light" style="min-width: 12rem;"> Workout A </th>
 									<th class="bg-primary text-light" style="min-width: 8rem;">
 										Progression
 									</th>
@@ -149,18 +140,7 @@
 									<th class="bg-primary text-light" style="min-width: 8rem;">
 										Workout 6
 									</th>
-									<th class="bg-primary text-light" style="min-width: 8rem;">
-										Workout 7
-									</th>
-									<th class="bg-primary text-light" style="min-width: 8rem;">
-										Workout 8
-									</th>
-									<th class="bg-primary text-light" style="min-width: 8rem;">
-										Workout 9
-									</th>
-									<th class="bg-primary text-light" style="min-width: 8rem;">
-										Workout 10
-									</th>
+
 
 
 
@@ -208,22 +188,7 @@
 										<span>165 IBS</span>
 										<span class="d-block">5 reps 5 sets </span>
 									</td>
-									<td>
-										<span>170 IBS</span>
-										<span class="d-block">5 reps 5 sets </span>
-									</td>
-									<td>
-										<span>175 IBS</span>
-										<span class="d-block">5 reps 5 sets </span>
-									</td>
-									<td>
-										<span>180 IBS</span>
-										<span class="d-block">5 reps 5 sets </span>
 
-									</td>
-									<td>
-
-									</td>
 
 
 
@@ -261,18 +226,7 @@
 									<td>
 
 									</td>
-									<td>
 
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
 
 
 
@@ -282,18 +236,6 @@
 
 									<td>
 										Barbell Bent-over-rows
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
 									</td>
 									<td>
 
@@ -352,18 +294,7 @@
 									<td>
 
 									</td>
-									<td>
 
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
 
 
 								</tr>
@@ -397,18 +328,7 @@
 									<td>
 
 									</td>
-									<td>
 
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
 
 
 								</tr>
@@ -442,18 +362,7 @@
 									<td>
 
 									</td>
-									<td>
 
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
 
 
 								</tr>
@@ -487,18 +396,7 @@
 									<td>
 
 									</td>
-									<td>
 
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
 
 								</tr>
 								<!--Table row   -->
@@ -531,18 +429,7 @@
 									<td>
 
 									</td>
-									<td>
 
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
 
 								</tr>
 								<!--Table row   -->
@@ -550,18 +437,6 @@
 
 									<td>
 										Pistol Squats
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
 									</td>
 									<td>
 
@@ -620,18 +495,7 @@
 									<td>
 
 									</td>
-									<td>
 
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
 
 
 								</tr>
@@ -645,18 +509,6 @@
 
 									</td>
 									<td>
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
 									</td>
 									<td>
 
@@ -695,7 +547,7 @@
 								<!--Table row   -->
 								<tr>
 
-									<th class="bg-primary text-light" style="min-width: 12rem;"> Exercise </th>
+									<th class="bg-primary text-light" style="min-width: 12rem;"> Workout B </th>
 									<th class="bg-primary text-light" style="min-width: 8rem;">
 										Progression
 									</th>
@@ -719,18 +571,7 @@
 									<th class="bg-primary text-light" style="min-width: 8rem;">
 										Workout 6
 									</th>
-									<th class="bg-primary text-light" style="min-width: 8rem;">
-										Workout 7
-									</th>
-									<th class="bg-primary text-light" style="min-width: 8rem;">
-										Workout 8
-									</th>
-									<th class="bg-primary text-light" style="min-width: 8rem;">
-										Workout 9
-									</th>
-									<th class="bg-primary text-light" style="min-width: 8rem;">
-										Workout 10
-									</th>
+
 
 
 
@@ -746,7 +587,7 @@
 										Barbell Squat
 									</td>
 									<td>
-										Liner Progression
+										Liner Load Increases
 
 									</td>
 									<td>
@@ -755,35 +596,30 @@
 
 									</td>
 									<td>
-
+										<span>140 IBS</span>
+										<span class="d-block">5 reps 5 sets </span>
 									</td>
 									<td>
-
+										<span>145 IBS</span>
+										<span class="d-block">5 reps 5 sets </span>
 									</td>
 									<td>
-
+										<span>150 IBS</span>
+										<span class="d-block">5 reps 5 sets </span>
 									</td>
 									<td>
-
+										<span>155 IBS</span>
+										<span class="d-block">5 reps 5 sets </span>
 									</td>
 									<td>
-
+										<span>160 IBS</span>
+										<span class="d-block">5 reps 5 sets </span>
 									</td>
 									<td>
-
+										<span>165 IBS</span>
+										<span class="d-block">5 reps 5 sets </span>
 									</td>
-									<td>
 
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
 
 
 
@@ -793,7 +629,13 @@
 
 									<td>
 										Barbell Bench Press
+										<span class="badge badge-pill badge-primary">Primary</span>
 									</td>
+									<td>
+
+									</td>
+
+
 									<td>
 
 									</td>
@@ -815,21 +657,7 @@
 									<td>
 
 									</td>
-									<td>
 
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
 
 
 
@@ -839,18 +667,6 @@
 
 									<td>
 										Barbell Bent-over-rows
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
 									</td>
 									<td>
 
@@ -909,18 +725,7 @@
 									<td>
 
 									</td>
-									<td>
 
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
 
 
 								</tr>
@@ -954,18 +759,7 @@
 									<td>
 
 									</td>
-									<td>
 
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
 
 
 								</tr>
@@ -999,18 +793,7 @@
 									<td>
 
 									</td>
-									<td>
 
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
 
 
 								</tr>
@@ -1044,18 +827,7 @@
 									<td>
 
 									</td>
-									<td>
 
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
 
 								</tr>
 								<!--Table row   -->
@@ -1088,18 +860,7 @@
 									<td>
 
 									</td>
-									<td>
 
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
 
 								</tr>
 								<!--Table row   -->
@@ -1107,18 +868,6 @@
 
 									<td>
 										Pistol Squats
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
 									</td>
 									<td>
 
@@ -1177,18 +926,7 @@
 									<td>
 
 									</td>
-									<td>
 
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
 
 
 								</tr>
@@ -1202,18 +940,6 @@
 
 									</td>
 									<td>
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
-									</td>
-									<td>
-
 									</td>
 									<td>
 

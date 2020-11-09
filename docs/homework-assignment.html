@@ -34,6 +34,13 @@
 			.then(data => {
 				document.querySelector(".footer-content").innerHTML = data;
 			});
+		fetch("client-profile-links.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".client-info-links").innerHTML = data;
+			});
 	</script>
 
 </head>
@@ -94,159 +101,37 @@
 
 			<main class="content">
 				<div class="container-fluid p-0 d-flex flex-row overflow-auto ">
-					<div class="px-3">
-						<div class="card card-hover" style="width: 18rem;">
-							<img class="card-img-top" src="/src/img/photos/blo.svg" alt="Card image cap">
-							<ul class="list-group list-group-flush">
-								<a href="client-info.html">
-									<li class="list-group-item ">Client Info</li>
-								</a>
-								<a href="exersice-prescription.html">
-									<li class="list-group-item ">Exercise Prescription </li>
-								</a>
-								<a href="progression-key.html">
-									<li class="list-group-item ">Progression key</li>
-								</a>
-								<a href="workout-log.html">
-									<li class="list-group-item ">Workout Log </li>
-								</a>
-								<a href="workout-log.html">
-									<li class="list-group-item active">Homework </li>
-								</a>
-								<a href="workout-log.html">
-									<li class="list-group-item">Statistics </li>
-								</a>
-								<a href="workout-log.html">
-									<li class="list-group-item">Archive </li>
-								</a>
-							</ul>
-						</div>
+					<div class="client-info-links">
+
+
+
 					</div>
 					<!-- Card -->
-					<div class="card">
-						<div class="card-header">
+
+					<main class="content">
+						<div class="container-fluid p-0">
+
+							<h1 class="h3 mb-3">Calendar</h1>
+
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title">FullCalendar</h5>
+									<h6 class="card-subtitle text-muted">Open source JavaScript jQuery plugin for a
+										full-sized, drag & drop event calendar.</h6>
+								</div>
+								<div class="card-body">
+									<div id="fullcalendar"></div>
+								</div>
+							</div>
 
 						</div>
+					</main>
 
-						<!-- Table -->
-						<div class="table-responsive">
-							<table id="basicDatatable"
-								class="table table-borderless table-thead-bordered table-nowrap table-align-middle card-table"
-								data-hs-datatables-options='{
-			   "order": []
-			 }'>
-								<thead class="thead-light">
-									<tr>
-										<th>Name</th>
-										<th>Position</th>
 
-									</tr>
-								</thead>
 
-								<tbody>
-									<tr>
-										<td>
-											<a class="media align-items-center" href="../user-profile.html">
-												<div class="avatar avatar-circle mr-3">
+					<!-- Table -->
 
-												</div>
-												<div class="media-body">
-													<span class="d-block h5 text-hover-primary mb-0">Amanda Harvey <i
-															class="tio-verified text-primary" data-toggle="tooltip"
-															data-placement="top" title="Top endorsed"></i></span>
-													<span
-														class="d-block font-size-sm text-body">amanda@example.com</span>
-												</div>
-											</a>
-										</td>
-										<td>
-											<span class="d-block h5 mb-0">Director</span>
-											<span class="d-block font-size-sm">Human resources</span>
-										</td>
 
-									</tr>
-
-									<tr>
-										<td>
-											<a class="media align-items-center" href="../user-profile.html">
-												<div class="avatar avatar-soft-primary avatar-circle mr-3">
-												</div>
-												<div class="media-body">
-													<span class="d-block h5 text-hover-primary mb-0">Anne Richard</span>
-													<span class="d-block font-size-sm text-body">anne@example.com</span>
-												</div>
-											</a>
-										</td>
-										<td>
-											<span class="d-block h5 mb-0">Seller</span>
-											<span class="d-block font-size-sm">Branding products</span>
-										</td>
-
-									</tr>
-
-									<tr>
-										<td>
-											<a class="media align-items-center" href="../user-profile.html">
-												<div class="avatar avatar-circle mr-3">
-
-												</div>
-												<div class="media-body">
-													<span class="d-block h5 text-hover-primary mb-0">David
-														Harrison</span>
-													<span
-														class="d-block font-size-sm text-body">david@example.com</span>
-												</div>
-											</a>
-										</td>
-										<td>
-											<span class="d-block h5 mb-0">Unknown</span>
-											<span class="d-block font-size-sm">Unknown</span>
-										</td>
-
-									</tr>
-
-									<tr>
-										<td>
-											<a class="media align-items-center" href="../user-profile.html">
-												<div class="avatar avatar-circle mr-3">
-
-												</div>
-												<div class="media-body">
-													<span class="d-block h5 text-hover-primary mb-0">Finch Hoot</span>
-													<span
-														class="d-block font-size-sm text-body">finch@example.com</span>
-												</div>
-											</a>
-										</td>
-										<td>
-											<span class="d-block h5 mb-0">Designer</span>
-											<span class="d-block font-size-sm">IT department</span>
-										</td>
-
-									</tr>
-
-									<tr>
-										<td>
-											<a class="media align-items-center" href="../user-profile.html">
-												<div class="avatar avatar-soft-dark avatar-circle mr-3">
-												</div>
-												<div class="media-body">
-													<span class="d-block h5 text-hover-primary mb-0">Bob Dean</span>
-													<span class="d-block font-size-sm text-body">bob@example.com</span>
-												</div>
-											</a>
-										</td>
-										<td>
-											<span class="d-block h5 mb-0">Executive director</span>
-											<span class="d-block font-size-sm">Marketing</span>
-										</td>
-
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<!-- End Table -->
-					</div>
 					<!-- End Card -->
 
 
@@ -266,6 +151,72 @@
 	</div>
 
 
+	<script src="js/app.js"></script>
+	<script>
+		$(function () {
+			var calendarEl = document.getElementById('fullcalendar');
+			var calendar = new FullCalendar.Calendar(calendarEl, {
+				themeSystem: 'bootstrap',
+				initialView: 'dayGridMonth',
+				initialDate: '2020-07-07',
+				headerToolbar: {
+					left: 'prev,next today',
+					center: 'title',
+					right: 'dayGridMonth,timeGridWeek,timeGridDay'
+				},
+				events: [{
+					title: 'All Day Event',
+					start: '2020-07-01'
+				},
+				{
+					title: 'Long Event',
+					start: '2020-07-07',
+					end: '2020-07-10'
+				},
+				{
+					groupId: '999',
+					title: 'Repeating Event',
+					start: '2020-07-09T16:00:00'
+				},
+				{
+					groupId: '999',
+					title: 'Repeating Event',
+					start: '2020-07-16T16:00:00'
+				},
+				{
+					title: 'Conference',
+					start: '2020-07-11',
+					end: '2020-07-13'
+				},
+				{
+					title: 'Meeting',
+					start: '2020-07-12T10:30:00',
+					end: '2020-07-12T12:30:00'
+				},
+				{
+					title: 'Lunch',
+					start: '2020-07-12T12:00:00'
+				},
+				{
+					title: 'Meeting',
+					start: '2020-07-12T14:30:00'
+				},
+				{
+					title: 'Birthday Party',
+					start: '2020-07-13T07:00:00'
+				},
+				{
+					title: 'Click for Google',
+					url: 'http://google.com/',
+					start: '2020-07-28'
+				}
+				]
+			});
+			setTimeout(function () {
+				calendar.render();
+			}, 250)
+		});
+	</script>
 
 </body>
 

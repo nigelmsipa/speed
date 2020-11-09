@@ -34,6 +34,13 @@
 			.then(data => {
 				document.querySelector(".footer-content").innerHTML = data;
 			});
+		fetch("client-profile-links.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".client-info-links").innerHTML = data;
+			});
 	</script>
 
 </head>
@@ -93,30 +100,91 @@
 
 			<main class="content">
 				<div class="container-fluid p-0 d-flex flex-row overflow-auto ">
-					<div class="px-3">
-						<div class="card card-hover" style="width: 18rem;">
-							<img class="card-img-top" src="/src/img/photos/blo.svg" alt="Card image cap">
-							<ul class="list-group list-group-flush">
-								<a href="client-info.html">
-									<li class="list-group-item active">Client Info</li>
-								</a>
-								<a href="exersice-prescription.html">
-									<li class="list-group-item ">Exercise Prescription </li>
-								</a>
-								<a href="progression-key.html">
-									<li class="list-group-item ">Progression key</li>
-								</a>
-								<a href="workout-log.html">
-									<li class="list-group-item">Workout Log </li>
-								</a>
+					<div class="client-info-links">
 
-							</ul>
-						</div>
+
+
 					</div>
 
+					<div>
+
+					</div>
 
 					<div class="px-3 container-fluid">
+						<div class="card">
+							<div class="card-header bg-primary text-light text-center">
+								Client Journey
+							</div>
 
+
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">
+									<!-- Default checked -->
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="check1" checked>
+										<label class="custom-control-label" for="check1">Intake Form</label>
+									</div>
+								</li>
+								<li class="list-group-item">
+									<!-- Default checked -->
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="check2">
+										<label class="custom-control-label" for="check2">Initial Assesment</label>
+									</div>
+								</li>
+								<li class="list-group-item">
+									<!-- Default checked -->
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="check3">
+										<label class="custom-control-label" for="check3">The Talk </label>
+									</div>
+								</li>
+								<li class="list-group-item">
+									<!-- Default checked -->
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="check4">
+										<label class="custom-control-label" for="check4">Trainer Assignment</label>
+									</div>
+								</li>
+								<li class="list-group-item">
+									<!-- Default checked -->
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="check5">
+										<label class="custom-control-label" for="check5">Exersice Prescription</label>
+									</div>
+								</li>
+								<li class="list-group-item">
+									<!-- Default checked -->
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="check5">
+										<label class="custom-control-label" for="check5">Fitness Assesment Date</label>
+									</div>
+								</li>
+								<li class="list-group-item">
+									<!-- Default checked -->
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="check5">
+										<label class="custom-control-label" for="check5">Homework Assignment</label>
+									</div>
+								</li>
+
+								<li class="list-group-item">
+									<!-- Default checked -->
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="check5">
+										<label class="custom-control-label" for="check5">Client Feedback</label>
+									</div>
+								</li>
+								<li class="list-group-item">
+									<!-- Default checked -->
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="check5">
+										<label class="custom-control-label" for="check5">Trainer Feedback</label>
+									</div>
+								</li>
+							</ul>
+
+						</div>
 						<div class="card">
 
 

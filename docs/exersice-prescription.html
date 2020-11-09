@@ -34,6 +34,13 @@
 			.then(data => {
 				document.querySelector(".footer-content").innerHTML = data;
 			});
+		fetch("client-profile-links.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".client-info-links").innerHTML = data;
+			});
 	</script>
 
 </head>
@@ -94,25 +101,10 @@
 
 			<main class="content">
 				<div class="container-fluid p-0 d-flex flex-row overflow-auto ">
-					<div class="px-3">
-						<div class="card card-hover" style="width: 18rem;">
-							<img class="card-img-top" src="/src/img/photos/blo.svg" alt="Card image cap">
-							<ul class="list-group list-group-flush">
-								<a href="client-info.html">
-									<li class="list-group-item ">Client Info</li>
-								</a>
-								<a href="exersice-prescription.html">
-									<li class="list-group-item active">Exercise Prescription </li>
-								</a>
-								<a href="progression-key.html">
-									<li class="list-group-item ">Progression key</li>
-								</a>
-								<a href="workout-log.html">
-									<li class="list-group-item">Workout Log </li>
-								</a>
+					<div class="client-info-links">
 
-							</ul>
-						</div>
+
+
 					</div>
 
 
@@ -132,32 +124,33 @@
 								<tr>
 
 								<tr>
-									<td style="width: 8rem; "> Training Goal </td>
-									<td style="width: 8rem;"> <b>Strength </b> </td>
+									<td style="width: 8rem; background-color: #006EAA; color: white; "> Training Goal
+									</td>
+									<td style="width: 8rem; "> <b>Strength </b> </td>
 									<td style="width: 8rem;"> <b>Hypertrophy</b></td>
 									<td style="width: 8rem;"><b>Enduarance</b></td>
 								</tr>
 								<tr>
-									<td>Frequency</td>
+									<td style=" background-color: #006EAA; color:white;">Frequency</td>
 									<td> 3x per week</td>
 									<td>3x per week</td>
 									<td>2x per week</td>
 								</tr>
 								<tr>
-									<td>Intensity</td>
+									<td style=" background-color: #006EAA; color: white;">Intensity</td>
 									<td>High</td>
 									<td>Moderate</td>
 									<td>Low</td>
 
 
 								<tr>
-									<td>Time</td>
+									<td style=" background-color: #006EAA; color: white;">Time</td>
 									<td>45 minutes</td>
 									<td>45 minutes</td>
 									<td>45 minutes</td>
 								</tr>
 								<tr>
-									<td>Type</td>
+									<td style=" background-color: #006EAA; color: white;">Type</td>
 									<td>Resistance Training</td>
 									<td>Resistance Training</td>
 									<td>Cardio </td>
@@ -165,7 +158,7 @@
 
 								</tr>
 								<tr>
-									<td>Volume</td>
+									<td style=" background-color: #006EAA; color: white;">Volume</td>
 									<td>Low</td>
 									<td>High</td>
 									<td>High</td>
@@ -199,32 +192,33 @@
 
 
 								<tr>
-									<td style="width: 8rem;">Training Goal</td>
+									<td style="width: 8rem;background-color: #006EAA; color:white;">Training Goal</td>
 									<td style="width: 8rem;"> Strength </td>
 									<td style="width: 8rem;">Hypertrophy</td>
 									<td style="width: 8rem;">Enduarance</td>
 								</tr>
+
 								<tr>
-									<td> Client Metric</td>
+									<td style=" background-color: #006EAA; color:white;"> Client Metric</td>
 									<td> Carry my grandchild </td>
 									<td>Toned arms</td>
 									<td>Run around the block</td>
 								</tr>
 								<tr>
-									<td>Primary Metric</td>
+									<td style=" background-color: #006EAA; color:white;">Primary Metric</td>
 									<td>Squat</td>
 									<td>Weight</td>
 									<td>Vo2 - Max</td>
 
 
 								<tr>
-									<td>Secondary Metric</td>
+									<td style=" background-color: #006EAA; color:white;">Secondary Metric</td>
 									<td>Bench</td>
 									<td>Body composition</td>
 									<td>1.5 Mile run</td>
 								</tr>
 								<tr>
-									<td>Tertiary Metric</td>
+									<td style=" background-color: #006EAA; color:white;">Tertiary Metric</td>
 									<td>Deadlift</td>
 									<td>Girth measurements</td>
 									<td>Step Test </td>
@@ -232,7 +226,7 @@
 
 								</tr>
 								<tr>
-									<td>Quaternary Metric</td>
+									<td style=" background-color: #006EAA; color:white;">Quaternary Metric</td>
 									<td>Overhead Press</td>
 									<td>BMI</td>
 									<td>Rowing</td>
@@ -249,61 +243,6 @@
 
 						</div>
 
-						<div class="card">
-
-							<table class=" table table-bordered text-center table-hover table-responsive-sm ">
-								<!--Table row   -->
-								<tr>
-
-									<th class="bg-primary text-light" colspan="4"> Adhearance
-									</th>
-
-
-								<tr>
-
-
-
-								<tr>
-									<td style="width: 8rem;">Training Goal</td>
-									<td style="width: 8rem;"> Strength </td>
-									<td style="width: 8rem;">Hypertrophy</td>
-									<td style="width: 8rem;">Enduarance</td>
-								</tr>
-								<tr>
-									<td> Expectancy </td>
-									<td>Low </td>
-									<td>Low</td>
-									<td>High</td>
-								</tr>
-								<tr>
-									<td>Value </td>
-									<td>High</td>
-									<td>High</td>
-									<td>Low</td>
-
-
-								<tr>
-									<td>Impulsivity</td>
-									<td>High</td>
-									<td>High</td>
-									<td>Low</td>
-								</tr>
-								<tr>
-									<td>Delay </td>
-									<td>High</td>
-									<td>High</td>
-									<td>Low</td>
-
-
-								</tr>
-
-
-
-
-
-
-							</table>
-						</div>
 
 						<div class="card">
 
@@ -313,89 +252,24 @@
 								<!--Table row   -->
 								<tr>
 
-									<th class="bg-primary text-light" colspan="4"> Individual Differances
+									<th class="bg-primary text-light" colspan="4"> Assesment Date
 									</th>
-
-
 								<tr>
 
 
 
 								<tr>
-									<td style="width: 8rem;">Training Goal</td>
-									<td style="width: 8rem;"> Strength </td>
-									<td style="width: 8rem;">Hypertrophy</td>
-									<td style="width: 8rem;">Enduarance</td>
+									<td style="width: 18.5rem; background-color: #006EAA; color:white;">Assesment Date
+									</td>
+									<td> 12/20/2020 </td>
 								</tr>
-
-								<tr>
-									<td> Injuries</td>
-									<td> </td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td> Special populations</td>
-									<td></td>
-									<td></td>
-									<td></td>
-
-								</tr>
-
-
-
-
-
 
 
 							</table>
 
 						</div>
 
-						<div class="card">
 
-
-
-							<table class=" table table-bordered text-center table-hover table-responsive-sm ">
-								<!--Table row   -->
-								<tr>
-
-									<th class="bg-primary text-light" colspan="4"> Fatigue Manegment
-									</th>
-
-
-								<tr>
-
-
-
-								<tr>
-									<td style="width: 8rem;">Training Goal</td>
-									<td style="width: 8rem;"> Strength </td>
-									<td style="width: 8rem;">Hypertrophy</td>
-									<td style="width: 8rem;">Enduarance</td>
-								</tr>
-								<tr>
-									<td> Start </td>
-									<td> </td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>End </td>
-									<td></td>
-									<td></td>
-									<td></td>
-
-
-								</tr>
-
-
-
-
-
-							</table>
-
-						</div>
 					</div>
 
 

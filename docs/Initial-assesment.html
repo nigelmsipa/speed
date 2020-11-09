@@ -34,6 +34,13 @@
 			.then(data => {
 				document.querySelector(".footer-content").innerHTML = data;
 			});
+		fetch("client-profile-links.html")
+			.then(response => {
+				return response.text()
+			})
+			.then(data => {
+				document.querySelector(".client-info-links").innerHTML = data;
+			});
 	</script>
 
 </head>
@@ -93,38 +100,574 @@
 
 
 			<main class="content">
-				<div class="container-fluid p-0">
-
-					<div class="container">
-						<h2>Initial Fitness Assesment</h2>
-						<p>Type something in the input field to search the list for specific emails:</p>
-						<input class="form-control" id="myInput" type="text" placeholder="Search..">
-						<br>
-						<ul class="list-group" id="myList">
-							<a href="workout-log.html">
-								<li class="list-group-item">Kim Harmon</li>
-							</a>
-							<a href="workout-log.html">
-								<li class="list-group-item">Seth Stark</li>
-							</a>
-							<a href="workout-log.html">
-								<li class="list-group-item">Valerie Furino</li>
-							</a>
-							<a href="workout-log.html">
-								<li class="list-group-item">Jennifer Miller</li>
-							</a>
-							<a href="workout-log.html">
-								<li class="list-group-item">Sara Milward</li>
-							</a>
+				<div class="container-fluid p-0 d-flex flex-row overflow-auto ">
+					<div class="client-info-links">
 
 
 
-						</ul>
 					</div>
 
-				</div>
-			</main>
+					<div class="  px-3">
 
+
+						<div class="card">
+
+
+							<table class=" table table-bordered text-center table-hover">
+								<!--Table row   -->
+								<tr>
+
+									<th class="bg-primary text-light" style="min-width: 12rem;"> Workout B </th>
+									<th class="bg-primary text-light" style="min-width: 8rem;">
+										Initial
+									</th>
+									<th class="bg-primary text-light" style="min-width: 8rem;">
+										Re-eval 1
+									</th>
+									<th class="bg-primary text-light" style="min-width: 8rem;">
+										Re-eval 2
+									</th>
+									<th class="bg-primary text-light" style="min-width: 8rem;">
+										Re-eval 3
+									</th>
+									<th class="bg-primary text-light" style="min-width: 8rem;">
+										Re-eval 4
+									<th class="bg-primary text-light" style="min-width: 8rem;">
+										Re-eval 5
+									</th>
+									<th class="bg-primary text-light" style="min-width: 8rem;">
+										Re-eval 6
+									</th>
+									<th class="bg-primary text-light" style="min-width: 8rem;">
+										End
+									</th>
+
+
+
+
+
+								</tr>
+								<!--Table row   -->
+
+
+
+								<tr class="text-muted">
+
+									<td>
+										Date
+									</td>
+									<td>
+
+
+									</td>
+									<td>
+
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+
+
+
+
+								</tr>
+								<!--Table row   -->
+								<tr>
+
+									<td>
+										Time
+
+									</td>
+									<td>
+
+									</td>
+
+
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+
+
+
+
+								</tr>
+								<!--Table row   -->
+								<tr>
+
+									<td>
+										Resting Heart Rate
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+
+
+								</tr>
+								<!--Table row   -->
+								<tr>
+
+									<td>
+										Height
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+
+
+
+								</tr>
+								<!--Table row   -->
+								<tr>
+
+									<td>
+										Weight
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+
+
+
+								</tr>
+								<!--Table row   -->
+								<tr>
+
+									<td>
+										Body Fat %
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+
+
+
+								</tr>
+								<!--Table row   -->
+								<tr>
+
+									<td>
+										Chest
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+
+
+								</tr>
+								<!--Table row   -->
+								<tr>
+
+									<td>
+										Waist
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+
+
+								</tr>
+								<!--Table row   -->
+								<tr>
+
+									<td>
+										Hip
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+
+
+								</tr>
+								<!--Table row   -->
+								<tr>
+
+									<td>
+										Right Thigh
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+
+
+
+								</tr>
+								<!--Table row   -->
+								<tr>
+
+									<td>
+										Right Arm
+									</td>
+									<td>
+
+									</td>
+									<td>
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+
+
+								</tr>
+								<!--Table row   -->
+								<tr>
+
+									<td>
+										Cardiovascular Test
+									</td>
+									<td>
+
+									</td>
+									<td>
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+
+
+								</tr>
+
+								<!--Table row   -->
+								<tr>
+
+									<td>
+										Musclular Enduarance
+									</td>
+									<td>
+
+									</td>
+									<td>
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+
+
+								</tr>
+								<!--Table row   -->
+								<tr>
+
+									<td>
+										Musclular Strength
+									</td>
+									<td>
+
+									</td>
+									<td>
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+
+
+								</tr>
+								<!--Table row   -->
+								<tr>
+
+									<td>
+										Flexibility
+									</td>
+									<td>
+
+									</td>
+									<td>
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+									<td>
+
+									</td>
+
+
+								</tr>
+
+							</table>
+
+
+						</div>
+					</div>
+
+
+
+
+
+				</div>
+
+			</main>
 
 			<footer class="footer">
 				<div class="footer-content">
@@ -134,6 +677,7 @@
 			</footer>
 		</div>
 	</div>
+
 
 </body>
 
